@@ -1,0 +1,78 @@
+FUNCTIONS 
+
+returnType name(){
+    // body 
+    return statement;
+}
+
+if the return type of the function is void it needs to return nothing 
+
+Methods are those functions which are a part of a class
+
+
+FUNCTIONS WITH PARAMETERS
+
+returnType(type param1 , type param2){
+    // body 
+    return statement;
+}
+
+PARAMETERS -> they are the variables that are a part of the function definition 
+
+ARGUMENTS -> they are the variables that are used while calling the function
+
+EXECUTION OF FUNCTION 
+
+the functons take part of the call stack 
+the part of memory used by the main function is called the stack frame, all the other functions are stored on the top of the main function in the stack
+
+* java is always call by value by default
+
+the copy of the originbal variable is passed in java so the original value of the variable are not changes 
+call by refrence is possible in c++ not in java
+
+there are two kind of methods in java
+
+1. user defined method : defined by the user
+2. inbuilt method : provided by java e.g. sqrt() , max()
+
+FUNCTION OVERLOADING 
+
+mutliple functions with the same name but different parameters
+
+the paramets can be different by their data type or by the number of parameters
+multiply(int a , int b)
+multiply(flaot a , flaot b)
+multiply(double a , dluble b)
+
+the overloaded functions do not depend on teh data type of the function byt he data type of the parameters involved 
+
+int sum(){} and float sum(){} they are the same functions
+
+BINARY TO DECIMAL 
+
+0 - 0
+1 - 01
+2 - 10
+3 - 11
+4 - 100
+5 - 101 
+6 - 110 
+7 - 111
+8 - 1000
+9 - 1001
+10 - 1010
+
+SCOPE 
+
+Method Scope : you cannot use variables before declaring them
+
+Block Scope : the variable declared inside the block {} can only be used inside the block 
+
+{
+    int a = 9;
+    
+}
+a = 5; -> this will give the error
+
+Class Scope : depend upon the access modifier of the class , Public , Private or Protected

@@ -1,0 +1,62 @@
+TREES : this is a hierarchial data structure, this is not linear, the data is stored in levels
+
+Root 
+Branches 
+Leaves
+
+Binary Tree : this is a tree in which every node has at max two children
+
+Level : this is the horizontal notation, this also shows the depth of the tree 
+Subtree : this are the smaller trees within the major tree, for a binary tree there is left and right sub-tree
+
+* the subtrees of leaf nodes are null
+
+Building tree 
+
+preorder sequence 
+node -> left node , right node 
+-1 means that its a leaf
+
+example
+1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1 
+
+1 - 2 - 4 , 5 - null , null 
+    3 - null , 6 - null , null
+
+
+There are three ways to traverse inside a tree
+
+via recursion (DFS)
+1. Preorder 
+2. Inorder 
+3. Postorder
+
+via iteration (BFS)
+1. Level order
+
+PREORDER : root , left sub-tree , right-subtree 
+
+INORDER : left sub-tree  , root , right-subtree
+
+POSTORDER : left sub-tree , right sub-tree , root
+
+LEVELORDER : data is printed according to the level of the tree, queue is used for this, FIFO (first in first out) is used
+the next line will bve stored inthe queue as the null pointer
+
+HEIGHT OF A TREE 
+
+this is the max distance between the root and the leaf 
+it can be calculated in the unit of nodes or edges 
+
+height of tree in nodes = height of tree in edges + 1
+
+the height is found by recursion 
+
+COUNT THE NODES OF A TREE 
+
+tree count  = left count + right count + 1 -> recursive
+
+SUM OF THE NODES 
+
+tree sum = leftSum + rightSum + root data -> recursive
+

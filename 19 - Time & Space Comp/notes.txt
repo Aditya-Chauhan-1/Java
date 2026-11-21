@@ -1,0 +1,194 @@
+TIME AND SPACE COMPLEXITY
+
+the time and space are calculated with respect to the input size
+
+order complexity analysis : parameters : tima and space 
+
+time complexity : amount of time taken by an algorithm wrt the input size, this is not the actual time taken
+
+there can be different time complexities:
+time = function(input size)
+
+1. Constant O(1)
+2. Log O (logn)
+3. Linear O (n)
+4. Linear * Log O(nlogn)
+5. Quadratic O(n^2)
+6. Exponential O(2^n)
+7. Factorial O(n!)
+
+there are two ways to calculate time complexities : experimental , theorotical
+we always try to find thes worst case time
+
+* Cormenn book 
+
+Big O Notation 
+this gives the worst case or the upper bound
+
+if time => an^2 + bn + c 
+ignore constants, take largest term
+time = f(n^2), therefore time complexity O(n^2)
+
+if time => an^3 + blogn + c
+Time => O(n^3)
+
+f(n) = O(g(n))
+
+lim n -> infinity |f(n)| / g(n) < infinity
+
+Big omega Notation
+
+this represents the best case time and the lower bound 
+
+Theta Notation
+
+this represents the average time of all the inputs for the algorithm 
+
+small O , small omega, small theta represents the precision in the calculation of the values of complexities
+
+SPACE COMPLEXITY 
+
+memory space -> heap(objects, variables, arrays) and stack (function calls) 
+
+input space + auxiliary space (temperory variables, arrays rewuired for the algoithms)  
+
+
+Loop analysis 
+
+for(int i=0; i<n; i++){
+    // some constant work k 
+}
+
+for a simple loop we check the number of operations 
+O(n * k) -> O(n)
+
+
+nested loop 
+
+for(int i=0; <n; i++){
+    for(int j=i+1; j<n; j++){
+        // some constant work k
+    }
+}
+
+n-1 + n-2 + n-3 + .... 0
+
+n(n+1) / 2 -> O(n^2) 
+
+nested loop 2 
+
+for(int i =0; i<n; i++){
+    for int j=0; j<i; j++
+{
+    some constant work -> k
+}}
+
+
+k + 2k + 3k + 4k + .... (n-1) k = k (n (n-1)) / 2 -> O(n^2)
+
+nested loop 3 
+
+for(int i=0; i<n; i = i+k){
+    for(int j=i+1; j<=k; j++){
+        // some cnst work -> p
+    }
+}
+
+O(n / k * k * p) -> O(n)
+
+
+Bubble sort : k(n + n-1 + n-2 ...) -> o(n^2)
+
+modified bubble sort -> worst case O(n^2)
+                        best case -> O(n)
+
+
+Binary Search ->
+
+n -> n/2 -> n/4 -> n/8 ... 1 
+n / 2^k = 1 
+O(logn)
+
+T(n) = k + T(n/2)
+T(n/2) = k + T(n/4)
+T(n/4) = k + T(n/8) ....
+
+adding all the terms 
+
+T(n)  = k*logn 
+O(n) = logn
+
+Recursive complexity analysis : two types : 1. linear , 2. D&C
+
+Total work done = (no of calls * work in each call)
+Recurrence Equation 
+Space complexity = (max depth * memory in each call)
+
+e.g. public static int fact(int n){
+    if(n==0){
+        return 1; -> k
+    }
+    return n * fact (n-1)
+}
+
+work done = no of calls * work in each call 
+            n * k
+time = O(n)
+space = depth(height of call stack) * memory for level = n * k -> O(n)
+
+Sum of n no. 
+
+static int sum(int n){
+    if(n==0){
+        return 0;
+    }
+    return n + sum(n-1);
+}
+
+time = n * k = O(n)
+space = n * k = O(n)
+
+fibonacci D&C 
+
+public class fib{
+static int fib(int n){
+    if(n==0 || n == 1){
+        return n;
+    }
+    return fib(n-1) + fib(n-2);
+}
+}
+
+f(n) = f(n-1) + f(n-2); -> recurrence relation 
+
+T(n) = T(n-1) + T(n-2) + k
+
+level = n 
+total calls ->2^n
+
+time -> O(2^n)
+space -> O(n)
+
+* read about golden ration in fibonacci 
+
+Merge Sort 
+
+two calls -> left & right and then merging
+log n calls , n work is done -> O(nlogn)
+
+Power function 
+
+time -> O(n)
+space -> O(n)
+
+Optimized power function 
+
+time -> O(logn)
+
+
+How to approch coding qustions 
+
+1. apply brute force 
+2. optimize it interms of time then space
+
+coding platforms can run 10^8 operations in 1s , after thet they give a time limit excedded error

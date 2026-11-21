@@ -1,0 +1,40 @@
+RECURSION
+
+this is present in all the programming languages
+
+* everything that can be done through iteration can be done using recursion and vice - versa
+
+Recursion is a method of solving a computational problem where the solution depends on the solution to a smaller instance of the same problem
+there is always a base case in recursion, we always know the value for the base case
+
+firstly we come from top to down towards the base case and tehn we return from bottom to up
+
+main -> fun -> fun -> fun -> fun -> main 
+        val <- val <-  val <- val <- val
+
+Call stack -> main function stores at the bottom 
+then subsequent function calls are made
+when we reach the base case then teh function returns and all the function calls in the stack are removed from top to bottom
+
+every function call in call stack is called call frame
+
+
+Stack Overflow -> there are two situations for stack overflow 
+stack overflow happens if there is no base case
+
+1. if parameters take too much memory
+2. if there are too many function calls
+
+FIbonacci -> 
+
+recursive equation 
+
+fib n  = fib n-1 + fib n-2
+
+if there are two or more simontaneous recursive calls then a tree is formed 
+it generally gives exponential time complexity we reduce it using Dynamic Programming
+
+optimized power function 
+
+for n = even : x^n = x^n/2 * x^n/2
+for n = odd : x^n = x * x^n/2 * x^n/2

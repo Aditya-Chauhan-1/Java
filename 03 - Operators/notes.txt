@@ -1,0 +1,71 @@
+OPERATIONS IN JAVA 
+
+operators are the symbols in JAVA which perform different opeartions 
+
+1. Arthematic operators 
+2. Relational operators
+3. Logical Operators 
+4. Bitwise Operators 
+5. Assignment operators
+
+ARTHEMATIC OPERATORS 
+
+BINARY ARTHEMATIC OPERATORS
++ -> addition 
+- -> substraction
+* -> multiplication
+/ -> divvision
+% -> modulus
+
+UNARY ARTHEMATIC OPERATORS
+
+++ -> increment operator (a = a + 1)
+-- -> decrement operator (a = a - 1)
+
+pre increment -> first the value is changed then it is used
+++ a 
+
+post increment -> first the value is used then it is changes
+a ++
+
+RELATIONAL OPERATORS
+
+== -> equal to
+!= -> not equal to 
+> -> lesser than 
+< -> greater than
+>= -> greater than or equal to 
+<= -> lesser than or equal to
+
+LOGICAL OPERATORS 
+
+&& -> logical AND 
+|| -> logical OR 
+! -> logical NOT
+
+ASSIGNMENT OPERATORS
+
+= -> assigned to 
++= -> a = a + 10 
+-= -> a = a - 3 
+*= -> a = a * 8
+/= -> a = a / 4
+
+OPERATOR PRECEDENCE 
+
+post increment/decrement 
+pre increment/decrement 
+* , / , %
++ - 
+>> , << , <<< , >>>
+relational 
+equality , not equality
+& 
+^ 
+| 
+&&
+||
+ternary 
+assignment
+
+if any expression has operators with same precedence then they are executed left to right

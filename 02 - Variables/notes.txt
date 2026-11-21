@@ -1,0 +1,109 @@
+JAVA FILES 
+
+the java files are stored with the extention .java
+
+public class first {
+    public static void main(String args[]) {
+
+    }
+}
+
+this is the boiler plate code in java
+
+To compile the code -> javac [filaname]
+To run the compiled code -> java [filename]
+
+OUTPUT IN JAVA 
+
+System.out.print("hello") -> prinitng 
+System.out.println("hello") -> printing in new line 
+use \n to get a line space where ever required
+
+VARIABLES IN JAVA 
+
+variables are named memory spaces which contain data that can be changes, variables can have different sizes based on the data types
+the constants in java are literals
+
+* java is a type sensetive language so data type must be defined
+
+In Java, variable names (identifiers) can:
+
+Start with a letter (A–Z or a–z),
+a dollar sign $, or
+an underscore _.
+
+DATA TYPES IN JAVA 
+
+PRIMITIVE 
+
+1. byte - 1 byte [-128 to 127]
+2. short - 2 bytes
+3. char - 2 bytes
+4. boolean - 1 byte
+5. int - 4 bytes [-2B - 2B]
+6. long - 8 bytes
+7. float - 4 bytes
+8. double - 8 bytes
+
+NON-PRIMITIVE 
+
+1. String 
+2. Array 
+3. Class 
+4. Object 
+5. Interface
+
+COMMENTS IN JAVA 
+
+// use this to write comments
+
+/* for multiple 
+line comments */
+
+INPUT IN JAVA 
+
+for getting the input we make an object fromt he Scanner class 
+
+next
+nextLine
+nextInt
+nextByte
+nextFloat
+nextDouble
+nextBoolean
+nextShort
+nextLong
+
+TYPE CONVERSION 
+
+the java compiler itself converts several types of data, this is the implicit conversion and widening conversion
+
+conversion can happen when 
+1. type compatible 
+2. destination type > source type 
+
+byte -> short -> int -> float -> long -> double
+
+TYPE CASTING 
+
+this is the explicit conversion and this is done forcefully agains the compiler 
+this is the lossy conversion, this is the narrowing conversion
+
+TYPE PROMOTION 
+
+1. java automatically promotes each byte, short, or char operand to int when evealuating the expression
+2. if one operand is long, float or double the whole expression is promoted to long, float or double respectively
+
+EXECUTION OF JAVA CODE 
+
+JDK : The JDK is a software development kit used to develop Java applications. It includes everything you need to write, compile, and run Java programs.
+JRE : The JRE is a runtime environment used to run Java applications. It does not include tools for development like a compiler.
+JVM : The JVM is the engine that runs Java bytecode. It is platform-independent, meaning Java code can run on any system that has a JVM.
+
+source code -> compiler -> byte code -> Java virtual machine (JVM) -> Native code
+.java                       .class
+
+the source code is compiled into byte code this is the compilation step 
+the byte code is converted into native code, this is the execution step 
+
+java is a portable language as the byte code is machine independent and can be executed on any operating system

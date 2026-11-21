@@ -1,0 +1,9 @@
+CONDITIONAL STATEMENTS 
+
+1. if , else 
+
+2. else if 
+
+3. ternary operator 
+
+4. switch

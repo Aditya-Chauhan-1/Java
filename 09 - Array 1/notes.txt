@@ -1,0 +1,28 @@
+ARRAYS IN JAVA
+
+arrays are non-primitive data structures
+they are the list of elements of same type stored in a contiguous memory location 
+
+> arrays in JAVA follow zero based indexing 
+> the memory locations in array are contageous
+
+array elements :    a , b , c 
+memeory addresses : 1001 , 1003 , 1005
+
+arrays are static, the memeory once defined cannot be changed at the runtime
+
+arrays are passed by refrence in the function 
+
+Linear search in array 
+> the time complexity - worst case O(n) as there are n operations
+
+Binary Search in array 
+> the binary search only works on sorted array, it can be incresing or decreasing
+
+the time complexity of binary search is 
+
+iterations go down by n / 2^k -> k = logn
+
+time taken by binary search < linear search
+
+Subarray -> a continuous part of array

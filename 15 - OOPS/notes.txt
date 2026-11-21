@@ -1,0 +1,183 @@
+OOPS -> Object Oriented Programming
+
+oops is a sytle of writing code 
+
+Classes -> groups / blueprints of the enteties 
+classes have attributes (properties) and functions (behaviours)
+
+Objects -> enteties in the real world 
+
+Access Modifiers 
+
+// if no access modifier is defined then it is of default type
+
+Access Modifier        within class     within package       outside packageby subclass only        outside package
+
+Private                     Y                 N                            N                                N 
+Default                     Y                 Y                            N                               N 
+Protected                   Y                 Y                            Y                               N
+Public                      Y                 Y                           Y                               Y
+
+
+GETTERS AND SETTERS
+
+get : to return the value 
+set: to modify the value 
+
+this : this keyword is used to refer to the current object 
+
+
+ENCAPTULATION 
+
+encaptulation is defined as the wrapping up of data & methods under a single unit. It also implements data hiding
+
+
+CONSTRUCTORS 
+
+constructor is a special method which is invoked automatically at the time of object creation 
+
+1. constructors have hte same name as class or structure 
+2. constructors dont have a return type (not even void)
+3. constructors can only be called once 
+4. memeory allocation happens when the constructor is callled
+
+by default java created construcors for the classes if we dont make them but they can't be initialized
+
+Types of constructors 
+
+1. non-parameterised : with no parameter 
+2. parameterized : with parameter 
+
+we can create multiple constructors according to the knowledge 
+
+construcors overloading : this is the phenomenon by which objects automatically call the required constructors from all the overloaded construcorswe have created according to the parameters -> this is also called polymorphism
+
+3. copy constructor : by default in C ++ 
+transferring all the properties of object 1 in object 2, so object2. =copy of object 1
+
+shallow and deep copy 
+
+shallow -> pass by refrence 
+deep -> actual copy
+
+* search lazy copy 
+
+DESTRUCTORS 
+
+special functions that remove the classes nce they are used, they are present in c++ , in java garbage collectors does all this
+
+
+INHERITANCE 
+
+inheritance is when the properties and methods from of base / parent  class are passed on to a derived / child class 
+
+single level inheritance : base class -> derived class 
+multi level inheritence : base class -> derived class -> derived class 
+
+hierarchial inheritance : base class -> derived class  (single base , multiple derived)
+                                     -> derived class
+
+hybrid inheritance : combination of everything
+
+in C++ there is multiple inheritance, two parent classes extend a single derived class, in java done with interfaces
+
+
+POLYMORPHISM 
+
+try to achieve the same functionality in many forms 
+
+1. Compile time polymorphism (static)
+- method overloading
+
+multiple functions with same name but different parameters 
+
+2. run time polymorphism (dynamic)
+- method overriding
+
+parent and child class have same function with different daefinition
+
+PACKAGES IN java
+package is a group of similar type of classes, interfaces and sub-classes
+
+in built -> java.util.* 
+
+user defined 
+
+// on top of file
+package myPackage;
+
+
+ABSTRACTION 
+
+hiding all the necessary details and showing only the important parts to the user , idea is given and implementation is not given
+
+- abstract classes 
+- interfaces 
+
+Abstract clsses 
+
+- cannot create an instance (object) of abstract class 
+- can have abstract / non - abstract methods 
+ - can have constructors
+
+INTERFACE 
+
+interface is the blueprint of the class 
+
+
+interface -> class -> object
+car -> alto -> alto 1 , alto 2 , alto 3
+
+
+its function is to implement multiple inheritance and achieve total abstraction
+
+a -> child 
+b -> 
+
+- defined with the interface keyword 
+- inherited with implements 
+- all methods in interface are public , abstract and without implementation 
+- used to achieve total abstraction 
+- variables in the interface are final, public and static 
+
+
+multiple inheritance 
+
+interface Herbivores{
+
+}
+
+interface Carnivores {
+
+}
+
+class Bear implements Herbivores, Carnivores{
+
+}
+
+
+STATIC KEYWORD 
+
+static keyword in java is used to share the same variable or method of a given class
+if all teh object s from the calss have a common variablke or method it is givent he static keyword
+
+- properties 
+- functions 
+ -block 
+ -nested classes
+
+ they all can be given static keyword
+
+ static objects are created only once in memory and once changed they change at all the places
+
+ main function is static so that there is only one main function for the base class
+
+ SUPER keyword 
+
+ super keyword is used to refer immidiate parent calss object 
+
+ - to access parent's properties 
+ - to access parent's functions 
+ - to access parent's constructors
+
+ * rad constructor chaining

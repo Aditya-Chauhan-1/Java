@@ -1,0 +1,35 @@
+DIVIDE AND CONQUER 
+
+dividing a big problem into smaller parts and then solving them one by one
+
+MERGE SORT (first.java)
+
+1. divide the array around the mid until we get the already sorted base array
+mid = (si + ei) / 2 
+mid = si + (ei - si) / 2
+
+2. mergeSort(left)
+   mergeSort(right)
+
+3. to merge the left and right parts
+
+the first step is the division step
+
+* merge sort is a depth first search algo
+
+QUICK SORT (second.java)
+
+av case time complexity -> O(nlogn)
+worst case time complexity -> O(n^2)
+
+space complexity -> O(1)
+
+pivot and partition approch 
+
+1. chose a pivot -> random , median , first , last
+2. partititon -> dividing the array in parts around the pivot
+3. calling quick sort for left part and right part, reach the base case
+
+worst case in quick sort occours when the pivot is always the smallest or the largest element
+
+third.java -> using modified binary search 
